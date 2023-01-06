@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="air-datepicker.css">
+    <link rel="stylesheet" href="modules/select/fstdropdown.css">
     <title>Document</title>
 </head>
 <body>
@@ -25,14 +26,13 @@
         <label class="sr-only" for="input4">Input Disabled</label>
         <input class="input-form" id="input4" placeholder="Placeholder" value="Value" disabled>
         <div class="input-label">Please choose:</div>
-        <label class="sr-only" for="input5">Please choose:</label>
+        <label class="sr-only" for="first">Please choose:</label>
         <div class="select">
-            <select class="input-form input-select" id="input5">
-                <option value="1">First select</option>
-                <option value="2">Second select</option>
-                <option value="3">Third select</option>
-                <option value="4">Fourth select</option>
-                <option value="5">Fifth select</option>
+            <select class='fstdropdown-select' id="first">
+                <option value="">Option</option>
+                <option value="1">1 First 2</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
             </select>
         </div>
         <div class="checkboxes">
@@ -62,16 +62,42 @@
 
     </div>
     <div class="column">
-        <label class="sr-only">
-            <input class="input-form" placeholder="Placeholder">
-        </label>
-        <label class="sr-only">
-            <input class="input-form" placeholder="Placeholder">
-        </label>
+        <label class="sr-only" for="input6"></label>
+        <input class="input-form" placeholder="Placeholder" id="input6">
+        <label class="sr-only" for="input7"></label>
+        <input class="input-form" placeholder="Placeholder" id="input7">
+        <div class="input-form search">
+            <input type="text" class="input-form-internal" placeholder="Placeholder">
+            <img src="/img/search.svg" alt="" class="search-icon">
+        </div>
+        <div class="input-form search-right">
+            <input type="text" class="input-form-internal" placeholder="Placeholder">
+            <img src="/img/search-right.svg" alt="" class="search-icon-right">
+        </div>
+        <div class="input-form search">
+            <input type="text" class="input-form-internal" placeholder="Placeholder">
+            <div class="www-icon">www</div>
+        </div>
+        <label class="sr-only" for="input8">Input Disabled</label>
+        <input class="input-form" id="input8" placeholder="Placeholder" value="Disabled" disabled>
+        <label class="sr-only" for="input9">Input Error</label>
+        <input class="input-form input-form_error" id="input9" placeholder="Placeholder" value="Value">
+        <label class="sr-only" for="input10">Input Focused</label>
+        <input class="input-form" id="input10" placeholder="Placeholder" value="Value">
+        <label class="sr-only" for="second">Please choose:</label>
+        <div class="select">
+            <select class='fstdropdown-select' id="second">
+                <option value="">Choose</option>
+                <option value="1">1 First 2</option>
+                <option value="2">Second</option>
+                <option value="3">Third</option>
+            </select>
+        </div>
+        <span class="switchery switchery-default" style="background-color: rgb(64, 153, 255); border-color: rgb(64, 153, 255); box-shadow: rgb(64, 153, 255) 0px 0px 0px 16px inset; transition: border 0.4s ease 0s, box-shadow 0.4s ease 0s, background-color 1.2s ease 0s;"><small style="left: 20px; transition: background-color 0.4s ease 0s, left 0.2s ease 0s; background-color: rgb(255, 255, 255);"></small></span>
     </div>
     <div class="column"></div>
 </div>
+<script src="modules/select/fstdropdown.js"></script>
 <script src="index_bundle.js"></script>
-
 </body>
 </html>
